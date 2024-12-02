@@ -10,27 +10,18 @@ Correção: Alterado para User (nomes de classes devem começar com letra maiús
 2. Driver MySQL
 Erro: O driver utilizado estava incorreto: com.mysql.Driver.Manager. O correto é com.mysql.cj.jdbc.Driver.
 Correção: Atualizado para com.mysql.cj.jdbc.Driver, que é o driver moderno recomendado para conexões MySQL em Java.
-3. URL da Conexão
-Erro:
-Escrita incorreta: jbdc (correto: jdbc).
-myswl (correto: mysql).
-Parâmetros de usuário e senha estavam embutidos de forma errada.
-Correção:
-URL corrigida: jdbc:mysql://127.0.0.1/test.
-Parâmetros de usuário e senha passados separadamente:
-conn = DriverManager.getConnection(url, user, password);
-4. Conexão Não Declarada
+3. Conexão Não Declarada
 Erro: A variável conn não foi declarada antes de ser utilizada em conectarBD.
 Correção: Declarada a variável no escopo correto:
 Connection conn = null;
-5. SQL Injection
+4. SQL Injection
 Erro: A construção manual da query com concatenação de strings era vulnerável a ataques de SQL Injection.
 Correção: Implementado o uso de Prepared Statements, que tratam os parâmetros de forma segura.
-6. Erro no Retorno do Método
+5. Erro no Retorno do Método
 Erro: A variável de retorno results foi escrita incorretamente (o correto seria result).
 Correção: Ajustado para retornar a variável correta:
 return result;
-7. Tratamento de Exceções
+6. Tratamento de Exceções
 Erro:
 Exceções estavam sendo ignoradas nos blocos try-catch.
 Uso de exception com letra minúscula (correto: Exception).
