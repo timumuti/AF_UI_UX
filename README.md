@@ -27,3 +27,16 @@ Exceções estavam sendo ignoradas nos blocos try-catch.
 Uso de exception com letra minúscula (correto: Exception).
 Correção:
 Alterado para capturar e exibir mensagens de erro no console com e.printStackTrace().
+
+![alt text](image-1.png)
+
+caminhos
+ 4-1-2-5-6-7-8-10
+ 4-1-3-5-6-7-8-10
+ 4-1-2-5-9-10
+ 4-1-3-5-9-10
+
+ M = E - N + 2P
+ Nós = 10
+ Arestas = 10
+ 
